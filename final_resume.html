@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anup Kanere - Backend Developer Resume</title>
+    <title>Anup Kanere - Software Developer Resume</title>
     <style>
         * {
             margin: 0;
@@ -24,9 +24,9 @@
 
         .header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
             border-bottom: 2px solid #2c3e50;
-            padding-bottom: 15px;
+            padding-bottom: 14px;
         }
 
         .name {
@@ -49,7 +49,7 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 18px;
             font-size: 11px;
             margin-top: 10px;
         }
@@ -61,7 +61,7 @@
         }
 
         .section {
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
         .section-title {
@@ -72,18 +72,18 @@
             letter-spacing: 0.5px;
             border-bottom: 1px solid #bdc3c7;
             padding-bottom: 3px;
-            margin-bottom: 10px;
+            margin-bottom: 9px;
         }
 
         .summary {
             font-size: 11px;
-            line-height: 1.5;
+            line-height: 1.45;
             text-align: justify;
             color: #2c3e50;
         }
 
         .experience-item {
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
 
         .job-header {
@@ -101,7 +101,7 @@
         }
 
         .company {
-            font-size: 12px;
+            font-size: 11px;
             color: #34495e;
             font-weight: 600;
         }
@@ -119,28 +119,18 @@
         }
 
         .achievements {
-            list-style: none;
-            padding-left: 0;
+            list-style: disc;
+            padding-left: 18px;
         }
 
         .achievements li {
             margin-bottom: 4px;
-            padding-left: 15px;
-            position: relative;
             font-size: 11px;
             line-height: 1.4;
         }
 
-        .achievements li:before {
-            content: "▸";
-            position: absolute;
-            left: 0;
-            color: #3498db;
-            font-weight: bold;
-        }
-
         .education-item {
-            margin-bottom: 8px;
+            margin-bottom: 7px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -163,13 +153,13 @@
 
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px;
             font-size: 11px;
         }
 
         .skill-category {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .skill-category-title {
@@ -184,23 +174,14 @@
         }
 
         .awards-list {
-            list-style: none;
-            padding-left: 0;
+            list-style: disc;
+            padding-left: 18px;
         }
 
         .awards-list li {
             margin-bottom: 4px;
-            padding-left: 15px;
-            position: relative;
             font-size: 11px;
             line-height: 1.3;
-        }
-
-        .awards-list li:before {
-            content: "🏆";
-            position: absolute;
-            left: 0;
-            font-size: 10px;
         }
 
         @page {
@@ -210,64 +191,72 @@
 
         @media print {
             @page {
-                margin: 0.5in;
+                margin: 0.3in;
                 size: A4;
             }
 
             body {
                 padding: 0;
                 margin: 0;
-                font-size: 10px;
+                font-size: 8.8px;
+                line-height: 1.22;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
 
-            .name {
-                font-size: 22px;
-            }
+            .header { margin-bottom: 8px; padding-bottom: 8px; border-bottom-width: 1px; }
+            .name { font-size: 17px; letter-spacing: 0; }
+            .title { font-size: 10.5px; }
+            .contact-info { font-size: 8.8px; gap: 8px; margin-top: 4px; }
 
-            .section-title {
-                font-size: 12px;
-            }
+            .section { margin-bottom: 8px; }
+            .section-title { font-size: 10.5px; margin-bottom: 5px; padding-bottom: 2px; }
+            .summary { font-size: 8.8px; line-height: 1.22; }
 
-            .contact-info {
-                font-size: 10px;
-            }
+            .job-header { margin-bottom: 2px; }
+            .job-title { font-size: 9.6px; }
+            .company { font-size: 8.8px; }
+            .duration { font-size: 8.8px; }
+            .job-description { font-size: 8.8px; margin-top: 3px; }
 
-            .print-btn {
-                display: none !important;
-            }
+            .skills-container { gap: 4px; }
+            .skill-category { margin-bottom: 3px; }
+            .skill-category-title { font-size: 9px; }
+            .skill-list { font-size: 8.8px; line-height: 1.15; }
+
+            .achievements { padding-left: 16px; }
+            .awards-list { padding-left: 16px; }
+            .achievements li { margin-bottom: 1px; }
+            .awards-list li { margin-bottom: 1px; }
+
+            .print-btn { display: none !important; }
         }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <div class="name">Anup Kanere</div>
-        <div class="title">Backend Software Developer</div>
+        <h1 class="name">Anup Kanere</h1>
+        <div class="title">Software Development Engineer</div>
         <div class="contact-info">
-            <div class="contact-item">📧 kanereanup@gmail.com</div>
-            <div class="contact-item">📱 +91 7720888632</div>
-            <div class="contact-item">📍 Vijayanagar, Bengaluru, India</div>
-            <div class="contact-item">💼 linkedin.com/in/anup-kanere-02a021205</div>
-            <div class="contact-item">🔗 github.com/anupKanere</div>
+            <div class="contact-item">Email: <a href="mailto:kanereanup@gmail.com">kanereanup@gmail.com</a></div>
+            <div class="contact-item">Phone: +91 7720888632</div>
+            <div class="contact-item">Location: Vijayanagar, Bengaluru, India</div>
+            <div class="contact-item">LinkedIn: <a href="https://linkedin.com/in/anup-kanere-02a021205">linkedin.com/in/anup-kanere-02a021205</a></div>
+            <div class="contact-item">GitHub: <a href="https://github.com/anupKanere">github.com/anupKanere</a></div>
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Professional Summary</div>
+        <h2 class="section-title">Professional Summary</h2>
         <div class="summary">
-            Results-driven Backend Software Developer with 1.4+ years of experience in cybersecurity and enterprise
-            software development. Specialized in building secure, scalable backend systems using Python, Go, and Rust.
-            Proven expertise in API development, database optimization, vulnerability scanning systems, and compliance
-            solutions. Strong background in microservices architecture, distributed systems, and cloud-to-on-premises
-            migrations. Demonstrated ability to deliver production-ready solutions in fast-paced environments while
-            maintaining high security and performance standards.
+            Results-driven Backend Software Developer with arouund 2 years of experience in fintech, cybersecurity, and enterprise
+            software development. Currently working as a Software Development Engineer at Razorpay, specializing in partnerships and observability systems. Proven expertise in building secure, scalable backend systems using Python, Go, and Rust with strong focus on API development, microservices architecture, and distributed systems. Demonstrated ability to deliver production-ready solutions in fast-paced environments while maintaining high performance and reliability standards.
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Technical Skills</div>
+        <h2 class="section-title">Technical Skills</h2>
         <div class="skills-container">
             <div class="skill-category">
                 <div class="skill-category-title">Programming Languages:</div>
@@ -293,23 +282,35 @@
                 <div class="skill-category-title">Security & Compliance:</div>
                 <div class="skill-list">Vulnerability Scanning, Compliance Frameworks</div>
             </div>
-            <!-- <div class="skill-category">
-                <div class="skill-category-title">Core Competencies:</div>
-                <div class="skill-list">Problem Solving, System Design Thinking, Team Communication, Agile Adaptability</div>
-            </div> -->
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Professional Experience</div>
+        <h2 class="section-title">Professional Experience</h2>
 
         <div class="experience-item">
             <div class="job-header">
                 <div>
-                    <div class="job-title">Backend Software Developer</div>
+                    <div class="job-title">Software Development Engineer</div>
+                    <div class="company">Razorpay Software Limited (via InfoBahn Software World), Bengaluru</div>
+                </div>
+                <div class="duration">September 2025 - Present</div>
+            </div>
+            <ul class="achievements">
+                <li>Working with the Partnerships Team to develop and maintain Golang-based backend services supporting strategic business integrations and partner onboarding workflows</li>
+                <li>Contributing to the Onboarding Team's Observability initiatives, implementing monitoring and logging solutions to enhance system visibility and performance tracking across microservices</li>
+                <!-- <li>Developing RESTful APIs and backend services using Go, ensuring high availability and scalability for critical payment processing and partnership management systems</li> -->
+                <li>Collaborating with cross-functional teams to design and implement observability patterns including metrics collection, distributed tracing, and log aggregation for improved system reliability</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <div class="job-title">Software Engineer</div>
                     <div class="company">Connect Secure, Bengaluru</div>
                 </div>
-                <div class="duration">March 2024 - Present</div>
+                <div class="duration">March 2024 - June 2025</div>
             </div>
             <ul class="achievements">
                 <li>Developed and maintained Python-based vulnerability scanning and remediation systems for Windows and
@@ -326,21 +327,18 @@
                     enumeration and DNS record discovery, enhancing threat detection capabilities</li>
                 <li>Implemented Redis caching and NATS messaging systems for asynchronous communication, improving
                     system response time by 50% in distributed microservices architecture</li>
-                <li>Designed and deployed applications directly on Linux servers without containerization, ensuring
-                    optimal performance and resource utilization for on-premises environments</li>
                 <li>Created automated Python-based report generation systems for compliance audits and security
                     assessments, streamlining client deliverables and reducing manual effort by 70%</li>
                 <li>Applied advanced data structures and algorithms to optimize vulnerability scanning processes,
                     reducing scan time complexity and improving overall system efficiency</li>
                 <li>Developed automated monitoring service for on-premises servers tracking memory utilization and SSL
                     certificate expiry with email alerting system</li>
-                <li>Led cloud-to-on-premises data migration projects, ensuring zero data loss and minimal downtime
-                    during infrastructure transitions</li>
+
             </ul>
 
             <div class="job-description">
                 <strong>International Assignment:</strong> Dubai Government, UAE (October 2024 - November 2024, May 2025
-                - Present)
+                - June 2025)
                 <br>Led critical data migration and security assessment projects for government infrastructure
                 modernization.
             </div>
@@ -348,7 +346,7 @@
     </div>
 
     <div class="section">
-        <div class="section-title">Education</div>
+        <h2 class="section-title">Education</h2>
 
         <div class="education-item">
             <div>
@@ -376,20 +374,21 @@
     </div>
 
     <div class="section">
-        <div class="section-title">Awards & Achievements</div>
+        <h2 class="section-title">Awards & Achievements</h2>
         <ul class="awards-list">
-            <li>Certificate of Excellence for outstanding performance at Connect Secure (2024)</li>
+            <li>Rising Star Award for outstanding performance at Connect Secure (2024)</li>
             <li>Certificate of Excellence for Excellent Service to JSW Steel Ltd (2022-2023)</li>
             <li>PAR EXCELLENCE AWARD at International Convention on Quality Control Circle (ICQCC) - 2021 & 2022</li>
-            <li>Successfully completed international assignments with Dubai Government demonstrating global project
-                execution capabilities</li>
+            <!-- <li>Successfully completed international assignments with Dubai Government demonstrating global project
+                execution capabilities</li> -->
         </ul>
     </div>
+
     <div class="section">
-        <div class="section-title">Certifications</div>
+        <h2 class="section-title">Certifications</h2>
         <ul class="awards-list">
             <li><strong>Programming with Google Go Specialization</strong> | Coursera, Instructor: Ian Harris | 2025
-                <br>Completed three courses focused on developing efficient applications using Google’s Go programming
+                <br>Completed three courses focused on developing efficient applications using Google's Go programming
                 language, covering advanced programming techniques, concurrent programming with goroutines, and building
                 scalable systems.
             </li>
